@@ -1,0 +1,9 @@
+{
+  "name": "wad-donation-backend",
+  "version": "1.0.0",
+  "description": "PayU payment gateway backend for WAD Donation",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}
