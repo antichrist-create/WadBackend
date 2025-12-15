@@ -1,16 +1,16 @@
 {
   "name": "wad-backend",
   "version": "1.0.0",
-  "description": "PayU Payment Gateway Backend",
+  "type": "module",
   "main": "api/payu/index.js",
   "scripts": {
     "start": "node api/payu/index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^5.0.0",
     "cors": "^2.8.5"
   },
   "engines": {
-    "node": "20.x"  
+    "node": "20.x"
   }
 }
