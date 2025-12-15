@@ -3,13 +3,14 @@
   "builds": [
     {
       "src": "api/payu/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "15mb"
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/payu/index.js"
+    },
     {
       "src": "/(.*)",
       "dest": "/api/payu/index.js"
