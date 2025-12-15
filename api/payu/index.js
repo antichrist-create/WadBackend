@@ -1,4 +1,4 @@
-// api/payu/initiate.js
+// api/payu/index.js
 import crypto from 'crypto';
 
 const corsHeaders = {
@@ -8,13 +8,11 @@ const corsHeaders = {
 };
 
 export default async function handler(req, res) {
-  // Handle CORS preflight
   if (req.method === 'OPTIONS') {
     res.status(200).set(corsHeaders).end();
     return;
   }
 
-  // Set CORS headers for all responses
   Object.entries(corsHeaders).forEach(([key, value]) => {
     res.setHeader(key, value);
   });
