@@ -11,6 +11,6 @@
     "cors": "^2.8.5"
   },
   "engines": {
-    "node": "20.x"  // Changed from ">=18.0.0" to "20.x"
+    "node": "20.x"  
   }
 }
