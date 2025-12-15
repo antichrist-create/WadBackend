@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/payu/index.js",
+      "src": "api/payu/index.js",  // ← index.js NOT intiate.js
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/payu/index.js"
+      "dest": "/api/payu/index.js"  // ← index.js NOT intiate.js
     }
   ]
 }
